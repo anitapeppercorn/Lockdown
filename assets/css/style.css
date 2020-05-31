@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  font-family: "arial", helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1vw;
+  color: black;
+  text-shadow: 0 1vw 0 rgba(218, 177, 177, 0.07);
+}
+
+/* Header style */
+header {
+  color: rgb(220, 241, 225);
+  padding: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 2vw;
+  color: #a7c8cd;
+  margin: 1vw;
+}
+
+header a {
+  text-decoration: none;
+  color: #cecece;
+}
+header a:hover {
+  color: gray;
+}
+
+header nav {
+  float: right;
+  margin: 1vw 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  margin: 0 2vw;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+/* hero */
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 1vw;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/*Body style */
+body {
+  background-color: #eff0f1;
+}
+
+.container {
+  background-color: rgb(220, 241, 225);
+  margin: 4vw;
+}
+
+.container:hover {
+  background-color: rgb(209, 199, 154);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1vw;
+  grid-auto-flow: dense;
+  margin: 4vw;
+}
+
+.grid-container a {
+  position: relative;
+  color: white;
+}
+
+.grid-item {
+  grid-column: span 4;
+  grid-row: span 3;
+  justify-content: left;
+  align-items: normal;
+  border: 0.05vw solid rgba(10, 22, 109, 0.878);
+  border-radius: 1vw;
+  font-size: 1vw;
+  background-color: rgba(187, 192, 235, 0.878);
+  display: inline-block;
+}
+
+.grid-item:hover {
+  background-color: rgba(137, 112, 168, 0.878);
+}
+
+.item-1 {
+  grid-column: 1 / span 6;
+  grid-row: span 6;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-2 {
+  grid-column: span 6;
+  grid-row: span 6;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-3 {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-4 {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.grid__img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+}
+
+footer {
+  background: rgb(220, 241, 225);
+  width: 100%;
+
+  display: inline-block;
+}
+
+footer h2 {
+  color: rgba(103, 143, 148, 0.534);
+  font-size: 2vw;
+  margin: 2vw;
+}
+
+footer p {
+  color: #024e76;
+  margin: 2vw;
+}

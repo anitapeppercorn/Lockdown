@@ -90,7 +90,7 @@ header nav ul li a {
 
 .grid-item a {
   position: relative;
-  color: white;
+  color: rgb(36, 31, 22);
 }
 
 .grid-item-image {
@@ -114,17 +114,17 @@ header nav ul li a {
 .grid-item-text {
   text-align: right;
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: 55%;
+  right: 0%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(36, 31, 22);
 }
 
 .grid-item-text button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 1vw 2vw;
+  padding: 1vw;
   color: black;
   background-color: #ddd;
   text-align: center;
@@ -144,11 +144,15 @@ header nav ul li a {
 .item-2 {
   grid-column: span 12;
   grid-row: span 2;
+  margin: 0vw;
+  padding: 1vw;
 }
 
 .item-3 {
   grid-column: span 3;
   grid-row: span 8;
+  margin: 0vw;
+  padding: 1vw;
 }
 
 .item-4 {
